@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagu Favoritku</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(-45deg, #ff6eb4, #ff4d4d, #4d9eff, #b366ff);
+      background-size: 600% 600%;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+      animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      25% { background-position: 50% 50%; }
+      50% { background-position: 100% 50%; }
+      75% { background-position: 50% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #ffb3c6;
+    }
+
+    .logo {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px rgba(255, 110, 180, 0.5);
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    audio {
+      width: 300px;
+      outline: none;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 110, 180, 0.4);
+    }
+
+    .song-title-top {
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+      margin: 20px 0;
+      text-shadow: 0 0 6px #ffb3c6;
+    }
+
+    .lyrics {
+      max-width: 400px;
+      color: #eee;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+      white-space: pre-wrap;
+      margin-bottom: 40px;
+      background: rgba(0, 0, 0, 0.4); /* lebih transparan */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 110, 180, 0.3);
+    }
+
+    a.back-btn {
+      color: #ffb86c;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    a.back-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lagu Favoritku</h1>
+
+  <div class="logo">
+    <img src="https://i.imgur.com/idCk4bk.jpeg" alt="Logo RDVAN">
+  </div>
+
+  <div class="song-title-top">Dirimu yang Dulu</div>
+
+  <audio controls>
+    <source src="lagu.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <div class="lyrics">
+Harusnya aku katakan dari dulu
+Sebelum semua jadi begini
+Kini terlanjur kisah sudah tak sama
+Seperti awal bertemu...
+
+Kamu telah banyak berubah
+Tak seperti yang kukenal dahulu hm-hm
+Mana dirimu yang dahulu?
+Yang selalu pentingkan aku
+Kini yang terdengar hanya suara amarahmu
+Mana kekasihku yang dulu?
+Yang tak pernah bisa melihatku menangis bersedih
+Mana dirimu yang dahulu
+
+Ho-oh-oh-oh uh-oh-uh-oh oh-oh
+Mana kekasihku yang dulu
+Kurindukan semua masa bahagia seperti dulu
+Saat tulusmu masih untukku hu-uh-oh
+Kamu kini jauh berbeda
+Tak seperti yang kukenal dahulu
+Mana dirimu yang dahulu?
+Yang selalu pentingkan aku
+Kini yang terdengar hanya suara amarahmu...
+Mana kekasihku yang dulu?
+Yang tak pernah bisa melihatku menangis bersedih
+Mana dirimu yang dahulu hu-uh-uh
+Kini hanya suara amarahmu
+
+Mana kekasihku yang dulu?
+Yang pentingkan aku hu-uh hu-uh
+Mana dirimu yang dahulu
+Kurindu dirimu yang dulu
+  </div>
+
+  <a href="index.html" class="back-btn">← Kembali ke Profil</a>
+
+</body>
+</html>
